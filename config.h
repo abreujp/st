@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:style=bold:size=13:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:style=bold:size=10:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -99,27 +99,27 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-  [0] = "#ffffff", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	[1] = "#d12f1b", /* red     */
-	[2] = "#3e8087", /* green   */
-	[3] = "#78492a", /* yellow  */
-	[4] = "#0f68a0", /* blue    */
-	[5] = "#ad3da4", /* magenta */
-	[6] = "#804fb8", /* cyan    */
-	[7] = "#262626", /* white   */
+  [0] = "#073642", /* black */ 
+	[1] = "#dc322f", /* red     */
+	[2] = "#859900", /* green   */
+	[3] = "#b58900", /* yellow  */
+	[4] = "#268bd2", /* blue    */
+	[5] = "#d33682", /* magenta */
+	[6] = "#2aa198", /* cyan    */
+	[7] = "#eee8d5", /* white   */
  
   /* 8 bright colors */
-	[8]  = "#8a99a6", /* black   */
-	[9]  = "#d12f1b", /* red     */
-	[10] = "#23575c", /* green   */
-	[11] = "#78492a", /* yellow  */
-	[12] = "#0b4f79", /* blue    */
-	[13] = "#ad3ad4", /* magenta */
-	[14] = "#4b21b0", /* cyan    */
-	[15] = "#262626", /* white   */
+	[8]  = "#002b36", /* black   */
+	[9]  = "#cb4b16", /* red     */
+	[10] = "#586e75", /* green   */
+	[11] = "#657b83", /* yellow  */
+	[12] = "#839496", /* blue    */
+	[13] = "#6c71c4", /* magenta */
+	[14] = "#93a1a1", /* cyan    */
+	[15] = "#fdf6e3", /* white   */
   /* special colors */
-  [256] = "#262626", /* foreground */
-  [257] = "#ffffff", /* background */
+  [256] = "#839496", /* foreground */
+  [257] = "#002B36", /* background */
 };
 
 
@@ -127,7 +127,7 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 15;
+unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
