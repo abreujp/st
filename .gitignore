@@ -1,0 +1,15 @@
+
+# Arquivos objeto
+*.o
+
+# Arquivos binários
+st
+dwm
+
+# Arquivos de backup
+*~
+*.bak
+*.orig
+
+# Arquivos de configuração
+
