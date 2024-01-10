@@ -1162,14 +1162,14 @@ xinit(int cols, int rows)
 	XMatchVisualInfo(xw.dpy, xw.scr, xw.depth, TrueColor, &vis);
 	xw.vis = vis.visual;
 
-	/* font */
-	if (!FcInit())
-		die("could not init fontconfig.\n");
+  /* font */
+  if (!FcInit())
+	  die("could not init fontconfig.\n");
 
-	usedfont = (opt_font == NULL)? font : opt_font;
-	xloadfonts(usedfont, 0);
-
-	/* colors */
+  usedfont = (opt_font == NULL)? (char *)fonts[0] : opt_font;
+  xloadfonts(usedfont, 0);
+	
+  /* colors */
 	xw.cmap = XCreateColormap(xw.dpy, parent, xw.vis, None);
 	xloadcols();
 
@@ -2140,3 +2140,4 @@ run:
 
 	return 0;
 }
+
