@@ -104,28 +104,28 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    [0] = "#2f383e", /* black   */
-    [1] = "#e67e80", /* red     */
-    [2] = "#a7c080", /* green   */
-    [3] = "#dbbc7f", /* yellow  */
-    [4] = "#7fbbb3", /* blue    */
-    [5] = "#d699b6", /* magenta */
-    [6] = "#83c092", /* cyan    */
-    [7] = "#d3c6aa", /* white   */
+    [0] = "#3B4252", /* black   - Nord1: used for background */
+    [1] = "#BF616A", /* red     - Nord11: used for deletions and errors */
+    [2] = "#A3BE8C", /* green   - Nord14: used for strings and inserted text */
+    [3] = "#EBCB8B", /* yellow  - Nord13: used for annotations */
+    [4] = "#81A1C1", /* blue    - Nord9: used for variable names and function calls */
+    [5] = "#B48EAD", /* magenta - Nord15: used for numbers and literals */
+    [6] = "#88C0D0", /* cyan    - Nord8: used for classes, types and documentation */
+    [7] = "#E5E9F0", /* white   - Nord5: used for main foreground, caret, delimiters and operators */
 
     /* 8 bright colors */
-    [8]  = "#7f8c98", /* black   */
-    [9]  = "#e67e80", /* red     */
-    [10] = "#a7c080", /* green   */
-    [11] = "#dbbc7f", /* yellow  */
-    [12] = "#7fbbb3", /* blue    */
-    [13] = "#d699b6", /* magenta */
-    [14] = "#83c092", /* cyan    */
-    [15] = "#d3c6aa", /* white   */
+    [8]  = "#4C566A", /* black   - Nord3: used for comments and invisible characters */
+    [9]  = "#BF616A", /* red     - Nord11: used for deletions and errors */
+    [10] = "#A3BE8C", /* green   - Nord14: used for strings and inserted text */
+    [11] = "#EBCB8B", /* yellow  - Nord13: used for annotations */
+    [12] = "#81A1C1", /* blue    - Nord9: used for variable names and function calls */
+    [13] = "#B48EAD", /* magenta - Nord15: used for numbers and literals */
+    [14] = "#8FBCBB", /* cyan    - Nord7: slightly lighter cyan compared to Nord8 */
+    [15] = "#ECEFF4", /* white   - Nord6: used for active text in UI components and highlighted text */
 
     /* special colors */
-    [256] = "#a7c080", /* foreground */
-    [257] = "#2f383e", /* background */
+    [256] = "#D8DEE9", /* foreground - Nord4: lighter than Nord6, used for text and UI components */
+    [257] = "#2E3440", /* background - Nord0: used for default background */
 };
 
 
