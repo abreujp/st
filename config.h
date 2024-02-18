@@ -125,7 +125,7 @@ static const char *colorname[] = {
 
     /* special colors */
     [256] = "#c0caf5", /* foreground - Tokyo Night text color (claro) */
-    [257] = "#1a1b26", /* background - Tokyo Night background color (escuro) */
+    [257] = "#24283b", /* background - Tokyo Night background color (escuro) */
 };
 
 /*
