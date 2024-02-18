@@ -104,30 +104,29 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    [0] = "#3B4252", /* black   - Nord1: used for background */
-    [1] = "#BF616A", /* red     - Nord11: used for deletions and errors */
-    [2] = "#A3BE8C", /* green   - Nord14: used for strings and inserted text */
-    [3] = "#EBCB8B", /* yellow  - Nord13: used for annotations */
-    [4] = "#81A1C1", /* blue    - Nord9: used for variable names and function calls */
-    [5] = "#B48EAD", /* magenta - Nord15: used for numbers and literals */
-    [6] = "#88C0D0", /* cyan    - Nord8: used for classes, types and documentation */
-    [7] = "#E5E9F0", /* white   - Nord5: used for main foreground, caret, delimiters and operators */
+    [0] = "#1a1b26", /* black   - Tokyo Night background (escuro) */
+    [1] = "#f7768e", /* red     - Tokyo Night red (vibrante) */
+    [2] = "#9ece6a", /* green   - Tokyo Night green (vibrante) */
+    [3] = "#e0af68", /* yellow  - Tokyo Night yellow (amarelo suave) */
+    [4] = "#7aa2f7", /* blue    - Tokyo Night blue (azul claro) */
+    [5] = "#bb9af7", /* magenta - Tokyo Night magenta (violeta claro) */
+    [6] = "#7dcfff", /* cyan    - Tokyo Night cyan (ciano claro) */
+    [7] = "#a9b1d6", /* white   - Tokyo Night foreground (claro) */
 
     /* 8 bright colors */
-    [8]  = "#4C566A", /* black   - Nord3: used for comments and invisible characters */
-    [9]  = "#BF616A", /* red     - Nord11: used for deletions and errors */
-    [10] = "#A3BE8C", /* green   - Nord14: used for strings and inserted text */
-    [11] = "#EBCB8B", /* yellow  - Nord13: used for annotations */
-    [12] = "#81A1C1", /* blue    - Nord9: used for variable names and function calls */
-    [13] = "#B48EAD", /* magenta - Nord15: used for numbers and literals */
-    [14] = "#8FBCBB", /* cyan    - Nord7: slightly lighter cyan compared to Nord8 */
-    [15] = "#ECEFF4", /* white   - Nord6: used for active text in UI components and highlighted text */
+    [8]  = "#414868", /* black   - Tokyo Night bright black (azul escuro) */
+    [9]  = "#f7768e", /* red     - Tokyo Night bright red (mesmo que normal) */
+    [10] = "#9ece6a", /* green   - Tokyo Night bright green (mesmo que normal) */
+    [11] = "#e0af68", /* yellow  - Tokyo Night bright yellow (mesmo que normal) */
+    [12] = "#7aa2f7", /* blue    - Tokyo Night bright blue (mesmo que normal) */
+    [13] = "#bb9af7", /* magenta - Tokyo Night bright magenta (mesmo que normal) */
+    [14] = "#7dcfff", /* cyan    - Tokyo Night bright cyan (mesmo que normal) */
+    [15] = "#c0caf5", /* white   - Tokyo Night bright white (mais claro que o foreground normal) */
 
     /* special colors */
-    [256] = "#D8DEE9", /* foreground - Nord4: lighter than Nord6, used for text and UI components */
-    [257] = "#2E3440", /* background - Nord0: used for default background */
+    [256] = "#c0caf5", /* foreground - Tokyo Night text color (claro) */
+    [257] = "#1a1b26", /* background - Tokyo Night background color (escuro) */
 };
-
 
 /*
  * Default colors (colorname index)
