@@ -104,30 +104,29 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    [0] = "#1a1b26", /* black   - Tokyo Night background (escuro) */
-    [1] = "#f7768e", /* red     - Tokyo Night red (vibrante) */
-    [2] = "#9ece6a", /* green   - Tokyo Night green (vibrante) */
-    [3] = "#e0af68", /* yellow  - Tokyo Night yellow (amarelo suave) */
-    [4] = "#7aa2f7", /* blue    - Tokyo Night blue (azul claro) */
-    [5] = "#bb9af7", /* magenta - Tokyo Night magenta (violeta claro) */
-    [6] = "#7dcfff", /* cyan    - Tokyo Night cyan (ciano claro) */
-    [7] = "#a9b1d6", /* white   - Tokyo Night foreground (claro) */
+    [0] = "#282a36", /* black   - Dracula background */
+    [1] = "#ff5555", /* red     - Dracula red */
+    [2] = "#50fa7b", /* green   - Dracula green */
+    [3] = "#f1fa8c", /* yellow  - Dracula yellow */
+    [4] = "#bd93f9", /* blue    - Dracula purple */
+    [5] = "#ff79c6", /* magenta - Dracula pink */
+    [6] = "#8be9fd", /* cyan    - Dracula cyan */
+    [7] = "#f8f8f2", /* white   - Dracula foreground */
 
     /* 8 bright colors */
-    [8]  = "#414868", /* black   - Tokyo Night bright black (azul escuro) */
-    [9]  = "#f7768e", /* red     - Tokyo Night bright red (mesmo que normal) */
-    [10] = "#9ece6a", /* green   - Tokyo Night bright green (mesmo que normal) */
-    [11] = "#e0af68", /* yellow  - Tokyo Night bright yellow (mesmo que normal) */
-    [12] = "#7aa2f7", /* blue    - Tokyo Night bright blue (mesmo que normal) */
-    [13] = "#bb9af7", /* magenta - Tokyo Night bright magenta (mesmo que normal) */
-    [14] = "#7dcfff", /* cyan    - Tokyo Night bright cyan (mesmo que normal) */
-    [15] = "#c0caf5", /* white   - Tokyo Night bright white (mais claro que o foreground normal) */
+    [8]  = "#6272a4", /* black   - Dracula comment (also used as bright black) */
+    [9]  = "#ff6e6e", /* red     - Dracula bright red */
+    [10] = "#69ff94", /* green   - Dracula bright green */
+    [11] = "#ffffa5", /* yellow  - Dracula bright yellow */
+    [12] = "#d6acff", /* blue    - Dracula bright purple */
+    [13] = "#ff92df", /* magenta - Dracula bright pink */
+    [14] = "#a4ffff", /* cyan    - Dracula bright cyan */
+    [15] = "#ffffff", /* white   - Dracula bright foreground */
 
     /* special colors */
-    [256] = "#c0caf5", /* foreground - Tokyo Night text color (claro) */
-    [257] = "#24283b", /* background - Tokyo Night background color (escuro) */
+    [256] = "#f8f8f2", /* foreground - Dracula foreground */
+    [257] = "#282a36", /* background - Dracula background */
 };
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor
