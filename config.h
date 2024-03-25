@@ -8,7 +8,7 @@
 /* static char *font = "JetBrainsMono Nerd Font Mono:style=bold:size=10:antialias=true:autohint=true"; */
 
 static const char *fonts[] = {
-    "JetBrainsMono Nerd Font Mono:style=Bold:size=14:antialias=true:autohint=true",
+    "JetBrainsMono Nerd Font Mono:style=Bold:size=12:antialias=true:autohint=true",
     "Noto Color Emoji:pixelsize=12:antialias=true:autohint=true"
 };
 static int borderpx = 2;
@@ -103,37 +103,37 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* 8 normal colors */
-    [0] = "#32302f", /* hard contrast: #1d2021 / soft contrast: #32302f */
-    [1] = "#d12f1b", /* red     */
-    [2] = "#3e8087", /* green   */
-    [3] = "#78492a", /* yellow  */
-    [4] = "#0f68a0", /* blue    */
-    [5] = "#ad3da4", /* magenta */
-    [6] = "#804fb8", /* cyan    */
-    [7] = "#262626", /* white   */
-    /* 8 bright colors */
-    [8]  = "#8a99a6", /* black   */
-    [9]  = "#d12f1b", /* red     */
-    [10] = "#23575c", /* green   */
-    [11] = "#78492a", /* yellow  */
-    [12] = "#0b4f79", /* blue    */
-    [13] = "#ad3ad4", /* magenta */
-    [14] = "#4b21b0", /* cyan    */
-    [15] = "#262626", /* white   */
-    /* special colors */
-    [256] = "#262626", /* foreground */
-    [257] = "#ffffff", /* background */
-};
+    [0] = "#282a36", /* black   - Dracula background */
+    [1] = "#ff5555", /* red     - Dracula red */
+    [2] = "#50fa7b", /* green   - Dracula green */
+    [3] = "#f1fa8c", /* yellow  - Dracula yellow */
+    [4] = "#bd93f9", /* blue    - Dracula purple */
+    [5] = "#ff79c6", /* magenta - Dracula pink */
+    [6] = "#8be9fd", /* cyan    - Dracula cyan */
+    [7] = "#f8f8f2", /* white   - Dracula foreground */
 
+    /* 8 bright colors */
+    [8]  = "#6272a4", /* black   - Dracula comment (also used as bright black) */
+    [9]  = "#ff6e6e", /* red     - Dracula bright red */
+    [10] = "#69ff94", /* green   - Dracula bright green */
+    [11] = "#ffffa5", /* yellow  - Dracula bright yellow */
+    [12] = "#d6acff", /* blue    - Dracula bright purple */
+    [13] = "#ff92df", /* magenta - Dracula bright pink */
+    [14] = "#a4ffff", /* cyan    - Dracula bright cyan */
+    [15] = "#ffffff", /* white   - Dracula bright foreground */
+
+    /* special colors */
+    [256] = "#f8f8f2", /* foreground - Dracula foreground */
+    [257] = "#282a36", /* background - Dracula background */
+};
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
+unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
 unsigned int defaultcs = 256;
-unsigned int defaultrcs = 257;
+static unsigned int defaultrcs = 257;
 /*
  * Default style of cursor
  * 0: blinking block
