@@ -103,28 +103,29 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    [0] = "#282a36", /* black   - Dracula background */
-    [1] = "#ff5555", /* red     - Dracula red */
-    [2] = "#50fa7b", /* green   - Dracula green */
-    [3] = "#f1fa8c", /* yellow  - Dracula yellow */
-    [4] = "#bd93f9", /* blue    - Dracula purple */
-    [5] = "#ff79c6", /* magenta - Dracula pink */
-    [6] = "#8be9fd", /* cyan    - Dracula cyan */
-    [7] = "#f8f8f2", /* white   - Dracula foreground */
+/* TokyoNight color scheme */
+    [0] = "#1a1b26", /* black   - TokyoNight background */
+    [1] = "#f7768e", /* red     - TokyoNight red */
+    [2] = "#9ece6a", /* green   - TokyoNight green */
+    [3] = "#e0af68", /* yellow  - TokyoNight yellow */
+    [4] = "#7aa2f7", /* blue    - TokyoNight blue */
+    [5] = "#bb9af7", /* magenta - TokyoNight magenta */
+    [6] = "#7dcfff", /* cyan    - TokyoNight cyan */
+    [7] = "#c0caf5", /* white   - TokyoNight foreground (light grey) */
 
     /* 8 bright colors */
-    [8]  = "#6272a4", /* black   - Dracula comment (also used as bright black) */
-    [9]  = "#ff6e6e", /* red     - Dracula bright red */
-    [10] = "#69ff94", /* green   - Dracula bright green */
-    [11] = "#ffffa5", /* yellow  - Dracula bright yellow */
-    [12] = "#d6acff", /* blue    - Dracula bright purple */
-    [13] = "#ff92df", /* magenta - Dracula bright pink */
-    [14] = "#a4ffff", /* cyan    - Dracula bright cyan */
-    [15] = "#ffffff", /* white   - Dracula bright foreground */
+    [8]  = "#414868", /* black   - TokyoNight selection (used as bright black) */
+    [9]  = "#ff7a93", /* red     - TokyoNight bright red */
+    [10] = "#b9f27c", /* green   - TokyoNight bright green */
+    [11] = "#ff9e64", /* yellow  - TokyoNight bright yellow */
+    [12] = "#7da6ff", /* blue    - TokyoNight bright blue */
+    [13] = "#bb9af7", /* magenta - Same as regular magenta */
+    [14] = "#7dcfff", /* cyan    - Same as regular cyan */
+    [15] = "#ffffff", /* white   - Bright foreground (white) */
 
     /* special colors */
-    [256] = "#f8f8f2", /* foreground - Dracula foreground */
-    [257] = "#282a36", /* background - Dracula background */
+    [256] = "#c0caf5", /* foreground - TokyoNight foreground */
+    [257] = "#1a1b26", /* background - TokyoNight background */
 };
 /*
  * Default colors (colorname index)
