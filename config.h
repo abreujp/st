@@ -103,29 +103,29 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-/* TokyoNight color scheme */
-    [0] = "#1a1b26", /* black   - TokyoNight background */
-    [1] = "#f7768e", /* red     - TokyoNight red */
-    [2] = "#9ece6a", /* green   - TokyoNight green */
-    [3] = "#e0af68", /* yellow  - TokyoNight yellow */
-    [4] = "#7aa2f7", /* blue    - TokyoNight blue */
-    [5] = "#bb9af7", /* magenta - TokyoNight magenta */
-    [6] = "#7dcfff", /* cyan    - TokyoNight cyan */
-    [7] = "#c0caf5", /* white   - TokyoNight foreground (light grey) */
+/* Gruvbox Light color scheme */
+    [0] = "#fbf1c7", /* black   - Gruvbox Light background */
+    [1] = "#cc241d", /* red     - Gruvbox Light red */
+    [2] = "#98971a", /* green   - Gruvbox Light green */
+    [3] = "#d79921", /* yellow  - Gruvbox Light yellow */
+    [4] = "#458588", /* blue    - Gruvbox Light blue */
+    [5] = "#b16286", /* magenta - Gruvbox Light magenta */
+    [6] = "#689d6a", /* cyan    - Gruvbox Light cyan */
+    [7] = "#7c6f64", /* white   - Gruvbox Light foreground (dark grey) */
 
     /* 8 bright colors */
-    [8]  = "#414868", /* black   - TokyoNight selection (used as bright black) */
-    [9]  = "#ff7a93", /* red     - TokyoNight bright red */
-    [10] = "#b9f27c", /* green   - TokyoNight bright green */
-    [11] = "#ff9e64", /* yellow  - TokyoNight bright yellow */
-    [12] = "#7da6ff", /* blue    - TokyoNight bright blue */
-    [13] = "#bb9af7", /* magenta - Same as regular magenta */
-    [14] = "#7dcfff", /* cyan    - Same as regular cyan */
-    [15] = "#ffffff", /* white   - Bright foreground (white) */
+    [8]  = "#928374", /* black   - Gruvbox Light bright black (grey) */
+    [9]  = "#fb4934", /* red     - Gruvbox Light bright red */
+    [10] = "#b8bb26", /* green   - Gruvbox Light bright green */
+    [11] = "#fabd2f", /* yellow  - Gruvbox Light bright yellow */
+    [12] = "#83a598", /* blue    - Gruvbox Light bright blue */
+    [13] = "#d3869b", /* magenta - Gruvbox Light bright magenta */
+    [14] = "#8ec07c", /* cyan    - Gruvbox Light bright cyan */
+    [15] = "#fbf1c7", /* white   - Gruvbox Light bright foreground (light background) */
 
     /* special colors */
-    [256] = "#c0caf5", /* foreground - TokyoNight foreground */
-    [257] = "#1a1b26", /* background - TokyoNight background */
+    [256] = "#3c3836", /* foreground - Gruvbox Light foreground */
+    [257] = "#fbf1c7", /* background - Gruvbox Light background */
 };
 /*
  * Default colors (colorname index)
@@ -133,7 +133,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
-unsigned int defaultcs = 4;
+unsigned int defaultcs = 9;
 static unsigned int defaultrcs = 257;
 /*
  * Default style of cursor
