@@ -103,29 +103,29 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-/* Gruvbox Light color scheme */
-    [0] = "#fbf1c7", /* black   - Gruvbox Light background */
-    [1] = "#cc241d", /* red     - Gruvbox Light red */
-    [2] = "#98971a", /* green   - Gruvbox Light green */
-    [3] = "#d79921", /* yellow  - Gruvbox Light yellow */
-    [4] = "#458588", /* blue    - Gruvbox Light blue */
-    [5] = "#b16286", /* magenta - Gruvbox Light magenta */
-    [6] = "#689d6a", /* cyan    - Gruvbox Light cyan */
-    [7] = "#7c6f64", /* white   - Gruvbox Light foreground (dark grey) */
+/* Gruvbox Dark color scheme */
+    [0] = "#282828", /* black   - Gruvbox Dark background */
+    [1] = "#cc241d", /* red     - Gruvbox Dark red */
+    [2] = "#98971a", /* green   - Gruvbox Dark green */
+    [3] = "#d79921", /* yellow  - Gruvbox Dark yellow */
+    [4] = "#458588", /* blue    - Gruvbox Dark blue */
+    [5] = "#b16286", /* magenta - Gruvbox Dark magenta */
+    [6] = "#689d6a", /* cyan    - Gruvbox Dark cyan */
+    [7] = "#a89984", /* white   - Gruvbox Dark foreground (light grey) */
 
     /* 8 bright colors */
-    [8]  = "#928374", /* black   - Gruvbox Light bright black (grey) */
-    [9]  = "#fb4934", /* red     - Gruvbox Light bright red */
-    [10] = "#b8bb26", /* green   - Gruvbox Light bright green */
-    [11] = "#fabd2f", /* yellow  - Gruvbox Light bright yellow */
-    [12] = "#83a598", /* blue    - Gruvbox Light bright blue */
-    [13] = "#d3869b", /* magenta - Gruvbox Light bright magenta */
-    [14] = "#8ec07c", /* cyan    - Gruvbox Light bright cyan */
-    [15] = "#fbf1c7", /* white   - Gruvbox Light bright foreground (light background) */
+    [8]  = "#928374", /* black   - Gruvbox Dark bright black (grey) */
+    [9]  = "#fb4934", /* red     - Gruvbox Dark bright red */
+    [10] = "#b8bb26", /* green   - Gruvbox Dark bright green */
+    [11] = "#fabd2f", /* yellow  - Gruvbox Dark bright yellow */
+    [12] = "#83a598", /* blue    - Gruvbox Dark bright blue */
+    [13] = "#d3869b", /* magenta - Gruvbox Dark bright magenta */
+    [14] = "#8ec07c", /* cyan    - Gruvbox Dark bright cyan */
+    [15] = "#ebdbb2", /* white   - Gruvbox Dark bright foreground (light beige) */
 
     /* special colors */
-    [256] = "#3c3836", /* foreground - Gruvbox Light foreground */
-    [257] = "#fbf1c7", /* background - Gruvbox Light background */
+    [256] = "#ebdbb2", /* foreground - Gruvbox Dark foreground */
+    [257] = "#282828", /* background - Gruvbox Dark background */
 };
 /*
  * Default colors (colorname index)
