@@ -103,29 +103,26 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-/* Gruvbox Dark color scheme */
-    [0] = "#282828", /* black   - Gruvbox Dark background */
-    [1] = "#cc241d", /* red     - Gruvbox Dark red */
-    [2] = "#98971a", /* green   - Gruvbox Dark green */
-    [3] = "#d79921", /* yellow  - Gruvbox Dark yellow */
-    [4] = "#458588", /* blue    - Gruvbox Dark blue */
-    [5] = "#b16286", /* magenta - Gruvbox Dark magenta */
-    [6] = "#689d6a", /* cyan    - Gruvbox Dark cyan */
-    [7] = "#a89984", /* white   - Gruvbox Dark foreground (light grey) */
-
+    [0] = "#32302f", /* hard contrast: #1d2021 / soft contrast: #32302f */
+    [1] = "#d12f1b", /* red     */
+    [2] = "#3e8087", /* green   */
+    [3] = "#78492a", /* yellow  */
+    [4] = "#0f68a0", /* blue    */
+    [5] = "#ad3da4", /* magenta */
+    [6] = "#804fb8", /* cyan    */
+    [7] = "#262626", /* white   */
     /* 8 bright colors */
-    [8]  = "#928374", /* black   - Gruvbox Dark bright black (grey) */
-    [9]  = "#fb4934", /* red     - Gruvbox Dark bright red */
-    [10] = "#b8bb26", /* green   - Gruvbox Dark bright green */
-    [11] = "#fabd2f", /* yellow  - Gruvbox Dark bright yellow */
-    [12] = "#83a598", /* blue    - Gruvbox Dark bright blue */
-    [13] = "#d3869b", /* magenta - Gruvbox Dark bright magenta */
-    [14] = "#8ec07c", /* cyan    - Gruvbox Dark bright cyan */
-    [15] = "#ebdbb2", /* white   - Gruvbox Dark bright foreground (light beige) */
-
+    [8]  = "#8a99a6", /* black   */
+    [9]  = "#d12f1b", /* red     */
+    [10] = "#23575c", /* green   */
+    [11] = "#78492a", /* yellow  */
+    [12] = "#0b4f79", /* blue    */
+    [13] = "#ad3ad4", /* magenta */
+    [14] = "#4b21b0", /* cyan    */
+    [15] = "#262626", /* white   */
     /* special colors */
-    [256] = "#ebdbb2", /* foreground - Gruvbox Dark foreground */
-    [257] = "#282828", /* background - Gruvbox Dark background */
+    [256] = "#262626", /* foreground */
+    [257] = "#ffffff", /* background */
 };
 /*
  * Default colors (colorname index)
