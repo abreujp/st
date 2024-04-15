@@ -103,26 +103,26 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    [0] = "#32302f", /* hard contrast: #1d2021 / soft contrast: #32302f */
-    [1] = "#d12f1b", /* red     */
-    [2] = "#3e8087", /* green   */
-    [3] = "#78492a", /* yellow  */
-    [4] = "#0f68a0", /* blue    */
-    [5] = "#ad3da4", /* magenta */
-    [6] = "#804fb8", /* cyan    */
-    [7] = "#262626", /* white   */
+    [0] = "#4C566A", /* original Nord comment color, darker grey */
+    [1] = "#BF616A", /* Nord red */
+    [2] = "#A3BE8C", /* Nord green */
+    [3] = "#EBCB8B", /* Nord yellow */
+    [4] = "#81A1C1", /* Nord blue */
+    [5] = "#B48EAD", /* Nord magenta */
+    [6] = "#88C0D0", /* Nord cyan */
+    [7] = "#E5E9F0", /* Nord light grey */
     /* 8 bright colors */
-    [8]  = "#8a99a6", /* black   */
-    [9]  = "#d12f1b", /* red     */
-    [10] = "#23575c", /* green   */
-    [11] = "#78492a", /* yellow  */
-    [12] = "#0b4f79", /* blue    */
-    [13] = "#ad3ad4", /* magenta */
-    [14] = "#4b21b0", /* cyan    */
-    [15] = "#262626", /* white   */
+    [8]  = "#4C566A", /* black (same as [0], but using Nord dark grey could work here) */
+    [9]  = "#BF616A", /* red */
+    [10] = "#A3BE8C", /* green */
+    [11] = "#EBCB8B", /* yellow */
+    [12] = "#81A1C1", /* blue */
+    [13] = "#B48EAD", /* magenta */
+    [14] = "#8FBCBB", /* lighter Nord cyan */
+    [15] = "#ECEFF4", /* Nord snow storm for bright white */
     /* special colors */
-    [256] = "#262626", /* foreground */
-    [257] = "#ffffff", /* background */
+    [256] = "#4C566A", /* foreground, darker grey */
+    [257] = "#ECEFF4", /* background, snow storm */
 };
 /*
  * Default colors (colorname index)
