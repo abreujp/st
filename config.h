@@ -103,26 +103,26 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    [0] = "#002b36", /* base02 */
-    [1] = "#dc322f", /* red */
-    [2] = "#859900", /* green */
-    [3] = "#b58900", /* yellow */
-    [4] = "#268bd2", /* blue */
-    [5] = "#6c71c4", /* magenta */
-    [6] = "#2aa198", /* cyan */
-    [7] = "#93a1a1", /* base1 */
-    /* 8 bright colors */
-    [8]  = "#657b83", /* base00 */
-    [9]  = "#dc322f", /* red */
-    [10] = "#859900", /* green */
-    [11] = "#b58900", /* yellow */
-    [12] = "#268bd2", /* blue */
-    [13] = "#6c71c4", /* magenta */
-    [14] = "#2aa198", /* cyan */
-    [15] = "#fdf6e3", /* base3 */
-    /* special colors */
-    [256] = "#657b83", /* foreground, base00 */
-    [257] = "#fdf6e3", /* background, base3 */
+    [0] = "#000000", /* preto absoluto para fundo */
+    [1] = "#cccccc", /* cinza claro substituindo o vermelho */
+    [2] = "#bbbbbb", /* cinza um pouco mais escuro substituindo o verde */
+    [3] = "#dddddd", /* cinza muito claro substituindo o amarelo */
+    [4] = "#cccccc", /* cinza claro substituindo o azul */
+    [5] = "#bbbbbb", /* cinza um pouco mais escuro substituindo o magenta */
+    [6] = "#dddddd", /* cinza muito claro substituindo o cyan */
+    [7] = "#e0e0e0", /* cinza claro para texto */
+    /* 8 cores claras */
+    [8] = "#888888", /* cinza médio para uso alternativo */
+    [9] = "#cccccc", /* cinza claro repetindo o vermelho */
+    [10] = "#bbbbbb", /* cinza um pouco mais escuro repetindo o verde */
+    [11] = "#dddddd", /* cinza muito claro repetindo o amarelo */
+    [12] = "#cccccc", /* cinza claro repetindo o azul */
+    [13] = "#bbbbbb", /* cinza um pouco mais escuro repetindo o magenta */
+    [14] = "#dddddd", /* cinza muito claro repetindo o cyan */
+    [15] = "#ffffff", /* branco para destaques e texto em destaque */
+    /* cores especiais */
+    [256] = "#e0e0e0", /* cinza claro para texto comum */
+    [257] = "#000000", /* preto absoluto para fundo */
 };
 /*
  * Default colors (colorname index)
