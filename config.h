@@ -103,26 +103,26 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    [0] = "#000000", /* preto absoluto para fundo */
-    [1] = "#cccccc", /* cinza claro substituindo o vermelho */
-    [2] = "#bbbbbb", /* cinza um pouco mais escuro substituindo o verde */
-    [3] = "#dddddd", /* cinza muito claro substituindo o amarelo */
-    [4] = "#cccccc", /* cinza claro substituindo o azul */
-    [5] = "#bbbbbb", /* cinza um pouco mais escuro substituindo o magenta */
-    [6] = "#dddddd", /* cinza muito claro substituindo o cyan */
-    [7] = "#e0e0e0", /* cinza claro para texto */
+    [0] = "#fca833", /* color0: âmbar claro */
+    [1] = "#4d2e03", /* color1: marrom escuro, substitui vermelho */
+    [2] = "#4d2e03", /* color2: marrom escuro, substitui verde */
+    [3] = "#fca833", /* color3: âmbar claro, substitui amarelo */
+    [4] = "#fca833", /* color4: âmbar claro, substitui azul */
+    [5] = "#e58806", /* color5: âmbar escuro, substitui magenta */
+    [6] = "#e58806", /* color6: âmbar escuro, substitui ciano */
+    [7] = "#fca833", /* color7: âmbar claro */
     /* 8 cores claras */
-    [8] = "#888888", /* cinza médio para uso alternativo */
-    [9] = "#cccccc", /* cinza claro repetindo o vermelho */
-    [10] = "#bbbbbb", /* cinza um pouco mais escuro repetindo o verde */
-    [11] = "#dddddd", /* cinza muito claro repetindo o amarelo */
-    [12] = "#cccccc", /* cinza claro repetindo o azul */
-    [13] = "#bbbbbb", /* cinza um pouco mais escuro repetindo o magenta */
-    [14] = "#dddddd", /* cinza muito claro repetindo o cyan */
-    [15] = "#ffffff", /* branco para destaques e texto em destaque */
+    [8] = "#fc9505", /* color8: âmbar médio */
+    [9] = "#fc9505", /* color9: âmbar médio, repetindo o vermelho */
+    [10] = "#9e5d07", /* color10: marrom médio, repetindo o verde */
+    [11] = "#c07205", /* color11: âmbar médio, repetindo o amarelo */
+    [12] = "#c07205", /* color12: âmbar médio, repetindo o azul */
+    [13] = "#fc9505", /* color13: âmbar médio, repetindo o magenta */
+    [14] = "#fc9505", /* color14: âmbar médio, repetindo o ciano */
+    [15] = "#1c1008", /* color15: marrom muito escuro, para destaques e texto em destaque */
     /* cores especiais */
-    [256] = "#e0e0e0", /* cinza claro para texto comum */
-    [257] = "#000000", /* preto absoluto para fundo */
+    [256] = "#fc9505", /* cinza claro para texto comum */
+    [257] = "#140b05", /* preto absoluto para fundo */
 };
 /*
  * Default colors (colorname index)
