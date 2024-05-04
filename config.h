@@ -103,26 +103,29 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    [0] = "#fca833", /* color0: âmbar claro */
-    [1] = "#4d2e03", /* color1: marrom escuro, substitui vermelho */
-    [2] = "#4d2e03", /* color2: marrom escuro, substitui verde */
-    [3] = "#fca833", /* color3: âmbar claro, substitui amarelo */
-    [4] = "#fca833", /* color4: âmbar claro, substitui azul */
-    [5] = "#e58806", /* color5: âmbar escuro, substitui magenta */
-    [6] = "#e58806", /* color6: âmbar escuro, substitui ciano */
-    [7] = "#fca833", /* color7: âmbar claro */
-    /* 8 cores claras */
-    [8] = "#fc9505", /* color8: âmbar médio */
-    [9] = "#fc9505", /* color9: âmbar médio, repetindo o vermelho */
-    [10] = "#9e5d07", /* color10: marrom médio, repetindo o verde */
-    [11] = "#c07205", /* color11: âmbar médio, repetindo o amarelo */
-    [12] = "#c07205", /* color12: âmbar médio, repetindo o azul */
-    [13] = "#fc9505", /* color13: âmbar médio, repetindo o magenta */
-    [14] = "#fc9505", /* color14: âmbar médio, repetindo o ciano */
-    [15] = "#1c1008", /* color15: marrom muito escuro, para destaques e texto em destaque */
-    /* cores especiais */
-    [256] = "#fc9505", /* cinza claro para texto comum */
-    [257] = "#140b05", /* preto absoluto para fundo */
+    /* Cores base */
+    [0] = "#2f343f", /* color0: Preto (base para fundo) */
+    [1] = "#a54242", /* color1: Vermelho */
+    [2] = "#8c9440", /* color2: Verde */
+    [3] = "#de935f", /* color3: Amarelo */
+    [4] = "#5f819d", /* color4: Azul */
+    [5] = "#85678f", /* color5: Magenta */
+    [6] = "#5e8d87", /* color6: Ciano */
+    [7] = "#707880", /* color7: Cinza claro (texto) */
+
+    /* Cores claras */
+    [8] = "#373b41", /* color8: Cinza escuro (usado para fundo de janela ativa) */
+    [9] = "#cc6666", /* color9: Vermelho claro */
+    [10] = "#b5bd68", /* color10: Verde claro */
+    [11] = "#f0c674", /* color11: Amarelo claro */
+    [12] = "#81a2be", /* color12: Azul claro */
+    [13] = "#b294bb", /* color13: Magenta claro */
+    [14] = "#8abeb7", /* color14: Ciano claro */
+    [15] = "#c5c8c6", /* color15: Branco (texto em destaque) */
+
+    /* Cores especiais */
+    [256] = "#c5c8c6", /* color256: Cinza muito claro para texto comum */
+    [257] = "#1d1f21", /* color257: Preto quase absoluto para fundo */
 };
 /*
  * Default colors (colorname index)
