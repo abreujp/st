@@ -8,7 +8,7 @@
 /* static char *font = "JetBrainsMono Nerd Font Mono:style=bold:size=10:antialias=true:autohint=true"; */
 
 static const char *fonts[] = {
-    "JetBrainsMono Nerd Font Mono:style=Bold:size=12:antialias=true:autohint=true",
+    "CaskaydiaMono Nerd Font Mono:style=Bold:size=12:antialias=true:autohint=true",
     "Noto Color Emoji:pixelsize=12:antialias=true:autohint=true"
 };
 static int borderpx = 2;
