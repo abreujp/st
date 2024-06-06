@@ -104,28 +104,28 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* Cores base */
-    [0] = "#2f343f", /* color0: Preto (base para fundo) */
-    [1] = "#a54242", /* color1: Vermelho */
-    [2] = "#8c9440", /* color2: Verde */
-    [3] = "#de935f", /* color3: Amarelo */
-    [4] = "#5f819d", /* color4: Azul */
-    [5] = "#85678f", /* color5: Magenta */
-    [6] = "#5e8d87", /* color6: Ciano */
-    [7] = "#707880", /* color7: Cinza claro (texto) */
+    [0] = "#1a1b26", /* color0: Preto (base para fundo) */
+    [1] = "#f7768e", /* color1: Vermelho */
+    [2] = "#9ece6a", /* color2: Verde */
+    [3] = "#e0af68", /* color3: Amarelo */
+    [4] = "#7aa2f7", /* color4: Azul */
+    [5] = "#bb9af7", /* color5: Magenta */
+    [6] = "#7dcfff", /* color6: Ciano */
+    [7] = "#a9b1d6", /* color7: Cinza claro (texto) */
 
     /* Cores claras */
-    [8] = "#373b41", /* color8: Cinza escuro (usado para fundo de janela ativa) */
-    [9] = "#cc6666", /* color9: Vermelho claro */
-    [10] = "#b5bd68", /* color10: Verde claro */
-    [11] = "#f0c674", /* color11: Amarelo claro */
-    [12] = "#81a2be", /* color12: Azul claro */
-    [13] = "#b294bb", /* color13: Magenta claro */
-    [14] = "#8abeb7", /* color14: Ciano claro */
-    [15] = "#c5c8c6", /* color15: Branco (texto em destaque) */
+    [8] = "#414868", /* color8: Cinza escuro (usado para fundo de janela ativa) */
+    [9] = "#f7768e", /* color9: Vermelho claro */
+    [10] = "#9ece6a", /* color10: Verde claro */
+    [11] = "#e0af68", /* color11: Amarelo claro */
+    [12] = "#7aa2f7", /* color12: Azul claro */
+    [13] = "#bb9af7", /* color13: Magenta claro */
+    [14] = "#7dcfff", /* color14: Ciano claro */
+    [15] = "#c0caf5", /* color15: Branco (texto em destaque) */
 
     /* Cores especiais */
-    [256] = "#c5c8c6", /* color256: Cinza muito claro para texto comum */
-    [257] = "#1d1f21", /* color257: Preto quase absoluto para fundo */
+    [256] = "#c0caf5", /* color256: Cinza muito claro para texto comum */
+    [257] = "#1a1b26", /* color257: Preto quase absoluto para fundo */
 };
 /*
  * Default colors (colorname index)
