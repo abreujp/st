@@ -104,7 +104,7 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* Cores base */
-    [0] = "#1a1b26", /* color0: Preto (base para fundo) */
+    [0] = "#24283b", /* color0: Preto (base para fundo) */
     [1] = "#f7768e", /* color1: Vermelho */
     [2] = "#9ece6a", /* color2: Verde */
     [3] = "#e0af68", /* color3: Amarelo */
@@ -125,7 +125,7 @@ static const char *colorname[] = {
 
     /* Cores especiais */
     [256] = "#c0caf5", /* color256: Cinza muito claro para texto comum */
-    [257] = "#1a1b26", /* color257: Preto quase absoluto para fundo */
+    [257] = "#24283b", /* color257: Preto quase absoluto para fundo */
 };
 /*
  * Default colors (colorname index)
