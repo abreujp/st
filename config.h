@@ -8,7 +8,7 @@
 /* static char *font = "JetBrainsMono Nerd Font Mono:style=bold:size=10:antialias=true:autohint=true"; */
 
 static const char *fonts[] = {
-    "FiraCode Nerd Font Mono:style=Bold:size=10:antialias=true:autohint=true",
+    "Monaco Nerd Font Mono:style=Bold:size=12:antialias=true:autohint=true",
     "Noto Color Emoji:pixelsize=10:antialias=true:autohint=true"
 };
 static int borderpx = 2;
@@ -103,29 +103,28 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* Nord Light color scheme */
-    [0] = "#ECEFF4", /* black   - Nord Light background */
-    [1] = "#BF616A", /* red     - Nord Light red */
-    [2] = "#A3BE8C", /* green   - Nord Light green */
-    [3] = "#EBCB8B", /* yellow  - Nord Light yellow */
-    [4] = "#5E81AC", /* blue    - Nord Light blue */
-    [5] = "#B48EAD", /* magenta - Nord Light magenta */
-    [6] = "#88C0D0", /* cyan    - Nord Light cyan */
-    [7] = "#4C566A", /* white   - Nord Light foreground (dark grey) */
+    [0] = "#1a1b26", /* color0: Preto (base para fundo) */
+    [1] = "#f7768e", /* color1: Vermelho */
+    [2] = "#9ece6a", /* color2: Verde */
+    [3] = "#e0af68", /* color3: Amarelo */
+    [4] = "#7aa2f7", /* color4: Azul */
+    [5] = "#bb9af7", /* color5: Magenta */
+    [6] = "#7dcfff", /* color6: Ciano */
+    [7] = "#a9b1d6", /* color7: Cinza claro (texto) */
 
-    /* 8 bright colors */
-    [8]  = "#D8DEE9", /* black   - Nord Light bright black (grey) */
-    [9]  = "#BF616A", /* red     - Nord Light bright red */
-    [10] = "#A3BE8C", /* green   - Nord Light bright green */
-    [11] = "#EBCB8B", /* yellow  - Nord Light bright yellow */
-    [12] = "#81A1C1", /* blue    - Nord Light bright blue */
-    [13] = "#B48EAD", /* magenta - Nord Light bright magenta */
-    [14] = "#8FBCBB", /* cyan    - Nord Light bright cyan */
-    [15] = "#ECEFF4", /* white   - Nord Light bright foreground (light background) */
+    /* Cores claras */
+    [8] = "#414868", /* color8: Cinza escuro (usado para fundo de janela ativa) */
+    [9] = "#f7768e", /* color9: Vermelho claro */
+    [10] = "#9ece6a", /* color10: Verde claro */
+    [11] = "#e0af68", /* color11: Amarelo claro */
+    [12] = "#7aa2f7", /* color12: Azul claro */
+    [13] = "#bb9af7", /* color13: Magenta claro */
+    [14] = "#7dcfff", /* color14: Ciano claro */
+    [15] = "#c0caf5", /* color15: Branco (texto em destaque) */
 
-    /* special colors */
-    [256] = "#2E3440", /* foreground - Nord Light foreground */
-    [257] = "#ECEFF4", /* background - Nord Light background */
+    /* Cores especiais */
+    [256] = "#c0caf5", /* color256: Cinza muito claro para texto comum */
+    [257] = "#1a1b26", /* color257: Preto quase absoluto para fundo */
 };
 /*
  * Default colors (colorname index)
